@@ -11,6 +11,7 @@ namespace QuickBuy.Dominio.Entidades
         public int id { get; set; }
         public DateTime dataPedido { get; set; }
         public int usuarioID { get; set; }
+        public virtual Usuario usuario { get; set; }
         public DateTime dataPrevisaoEntrega { get; set; }
         public string cep { get; set; }
         public string estado { get; set; }

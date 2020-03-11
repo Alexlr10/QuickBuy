@@ -9,9 +9,18 @@ namespace QuickBuy.Repositorio.Config
 {
    public  class ItemPedidoConfiguration : IEntityTypeConfiguration<Usuario>
     {
-        public void Configure(EntityTypeBuilder<Usuario> builder)
+        public void Configure(EntityTypeBuilder<ItemPedido> builder)
         {
-            throw new NotImplementedException();
+            builder.HasKey(i => i.id);
+
+            builder
+                .Property(i => i.produtoID)
+                .IsRequired();
+
+            builder
+                .Property(i => i.quantidade)
+                .IsRequired();
+
         }
     }
 }
