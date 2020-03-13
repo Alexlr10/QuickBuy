@@ -2,13 +2,11 @@
 using QuickBuy.Dominio.Entidades;
 using QuickBuy.Dominio.ObjetoDeValor;
 using QuickBuy.Repositorio.Config;
-using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace QuickBuy.Repositorio.Contexto
 {
-   public class QuickBuyContexto : DbContext
+    public class QuickBuyContexto : DbContext
     {
        
 
